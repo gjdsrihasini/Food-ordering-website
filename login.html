@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreshBite - Login / Register</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Header Banner -->
+  <header class="freshbite-top-bar">
+    <div class="container-fluid px-lg-5">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="brand-icon-box">
+             <i class="fa-solid fa-pizza-slice"></i>
+          </div>
+          <div>
+            <h1 class="brand-title">FRESH<span>BITE</span></h1>
+            <div class="brand-subtitle">FREE WEB DEVELOPMENT INTERNSHIP ONLINE • E-COMMERCE TASK</div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          
+         <a href="#"><button class="top-pill active-pill"><i class="bi bi-shop"></i> FOOD</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section Heading -->
+  <div class="container-fluid px-lg-5 pt-3">
+    <h2 class="main-page-heading">
+      <i class="bi bi-cup-hot-fill"></i> FreshBite - Online Food Ordering
+    </h2>
+  </div>
+
+  <!-- Main Navigation -->
+  <div class="container-fluid px-lg-5">
+    <nav class="navbar navbar-expand-lg freshbite-nav mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand d-lg-none fw-bold text-dark" href="index.html">FreshBite Navigation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#freshbiteNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="freshbiteNavbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurants.html"><i class="bi bi-shop"></i> Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html"><i class="bi bi-book"></i> Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#offers"><i class="bi bi-percent"></i> Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html"><i class="bi bi-cart3"></i> Cart <span class="cart-badge cart-item-count">0</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="account.html"><i class="bi bi-person"></i> Account</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html"><i class="bi bi-credit-card"></i> Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="orders.html"><i class="bi bi-receipt"></i> Orders</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact Us</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <a href="login.html" id="navUserLink" class="btn btn-primary-orange btn-sm rounded-pill"><i class="bi bi-box-arrow-in-right"></i> Login/Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="container-fluid px-lg-5">
+
+    <div class="row justify-content-center py-4">
+      <div class="col-md-8 col-lg-5">
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+          <div class="card-header bg-white border-bottom p-0">
+            <ul class="nav nav-pills nav-justified" id="authTabs">
+              <li class="nav-item">
+                <button class="nav-link active rounded-0 py-3 fw-bold" data-bs-toggle="pill" data-bs-target="#loginTab">Login</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link rounded-0 py-3 fw-bold" data-bs-toggle="pill" data-bs-target="#registerTab">Register</button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body p-4">
+            <div class="tab-content" id="authTabContent">
+              <!-- Login Tab -->
+              <div class="tab-pane fade show active" id="loginTab">
+                <form id="loginForm">
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Email / Mobile Number</label>
+                    <input type="email" id="loginEmail" class="form-control" required placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Password</label>
+                    <input type="password" class="form-control" required placeholder="••••••••">
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="rememberMe" checked>
+                      <label class="form-check-label small text-muted" for="rememberMe">Remember me</label>
+                    </div>
+                    <a href="#" class="small text-orange text-decoration-none">Forgot password?</a>
+                  </div>
+                  <button type="submit" class="btn btn-primary-orange w-100 py-2.5 rounded-pill fw-bold"><i class="bi bi-box-arrow-in-right"></i> Sign In</button>
+                </form>
+              </div>
+
+              <!-- Register Tab -->
+              <div class="tab-pane fade" id="registerTab">
+                <form id="registerForm">
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Full Name</label>
+                    <input type="text" id="regName" class="form-control" required placeholder="John Doe">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Email Address</label>
+                    <input type="email" id="regEmail" class="form-control" required placeholder="john@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Mobile Number</label>
+                    <input type="tel" id="regPhone" class="form-control" required placeholder="+91 98765 43210">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-muted small fw-semibold">Create Password</label>
+                    <input type="password" class="form-control" required placeholder="••••••••">
+                  </div>
+                  <button type="submit" class="btn btn-primary-orange w-100 py-2.5 rounded-pill fw-bold"><i class="bi bi-person-plus"></i> Create Account</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="freshbite-footer">
+    <div class="container-fluid px-lg-5">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-icon-box" style="width:36px; height:36px; font-size:1.1rem;"><i class="fa-solid fa-pizza-slice"></i></div>
+            <h4 class="fw-bold text-white mb-0">FreshBite</h4>
+          </div>
+          <p class="small text-secondary">FreshBite is an online food ordering platform connecting food lovers with top restaurants, delivering warm, delicious meals right to your doorstep.</p>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h5>Help & Support</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="orders.html">Order History</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Subscribe to Offers</h5>
+          <p class="small text-secondary">Get exclusive coupons, discounts, and food updates delivered straight to your inbox.</p>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email Address">
+            <button class="btn btn-primary-orange">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="mb-0">© 2026 FreshBite Food Delivery. Built for Free Web Development Internship Online Task.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+/* FreshBite Custom Styling - Warm, Cozy & Appetizing Palette */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-orange: #FF6B35;
+  --primary-orange-hover: #e55a28;
+  --cream-bg: #FFF8F0;
+  --cream-card: #FFFFFF;
+  --dark-brown: #2D1B12;
+  --dark-brown-light: #4A3225;
+  --muted-brown: #7A6255;
+  --warm-border: #E8D8C8;
+  --veg-color: #2E7D32;
+  --nonveg-color: #C62828;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  color: var(--dark-brown);
+  line-height: 1.6;
+}
+
+/* Header & Top Banner */
+.freshbite-top-bar {
+  background-color: var(--cream-bg);
+  border-bottom: 1px solid var(--warm-border);
+  padding: 10px 0;
+}
+
+.brand-icon-box {
+  background-color: var(--primary-orange);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  color: var(--dark-brown);
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.brand-title span {
+  color: var(--primary-orange);
+}
+
+.brand-subtitle {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--dark-brown-light);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.top-pill {
+  background-color: #F3E8DC;
+  color: var(--dark-brown);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.top-pill.active-pill {
+  background-color: var(--primary-orange);
+  color: white;
+}
+
+/* Main Section Heading */
+.main-page-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--dark-brown);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.main-page-heading i {
+  color: var(--primary-orange);
+}
+
+/* Main Navbar */
+.freshbite-nav {
+  background-color: var(--cream-bg);
+  box-shadow: 0 2px 10px rgba(45, 27, 18, 0.05);
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.freshbite-nav .nav-link {
+  color: var(--dark-brown);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.freshbite-nav .nav-link:hover,
+.freshbite-nav .nav-link.active {
+  color: white;
+  background-color: var(--primary-orange);
+}
+
+.cart-badge {
+  background-color: var(--dark-brown);
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+/* Buttons */
+.btn-primary-orange {
+  background-color: var(--primary-orange);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 24px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
+}
+
+.btn-primary-orange:hover {
+  background-color: var(--primary-orange-hover);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.3);
+}
+
+.btn-outline-brown {
+  border: 2px solid var(--dark-brown);
+  color: var(--dark-brown);
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 24px;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.btn-outline-brown:hover {
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #FFF8F0 0%, #FFE9D6 100%);
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 40px;
+  border: 1px solid var(--warm-border);
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--dark-brown);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--dark-brown-light);
+  margin-bottom: 25px;
+}
+
+/* Food & Restaurant Cards */
+.custom-card {
+  background: var(--cream-card);
+  border: 1px solid #F0E2D4;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(45, 27, 18, 0.08);
+  border-color: var(--primary-orange);
+}
+
+.card-img-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover .card-img-container img {
+  transform: scale(1.05);
+}
+
+.rating-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  color: var(--dark-brown);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Veg / Non-Veg Indicator */
+.food-type-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.food-type-icon.veg {
+  border: 2px solid var(--veg-color);
+}
+
+.food-type-icon.veg::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--veg-color);
+  border-radius: 50%;
+}
+
+.food-type-icon.non-veg {
+  border: 2px solid var(--nonveg-color);
+}
+
+.food-type-icon.non-veg::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--nonveg-color);
+  border-radius: 50%;
+}
+
+/* Category Cards */
+.category-card {
+  background-color: var(--cream-bg);
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-card:hover,
+.category-card.active {
+  background-color: white;
+  border-color: var(--primary-orange);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.15);
+  transform: translateY(-3px);
+}
+
+.category-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: var(--primary-orange);
+}
+
+/* Section Header */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark-brown);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+/* Toast Notification */
+.freshbite-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1080;
+  background-color: var(--dark-brown);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.freshbite-toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Footer */
+.freshbite-footer {
+  background-color: var(--dark-brown);
+  color: #E8D8C8;
+  padding: 50px 0 20px;
+  margin-top: 60px;
+}
+
+.freshbite-footer h5 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.freshbite-footer a {
+  color: #D3C2B3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.freshbite-footer a:hover {
+  color: var(--primary-orange);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 40px;
+  font-size: 0.85rem;
+}
+
+/* Dietary Badges */
+.tag-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background-color: #F0E8E0;
+  color: var(--dark-brown);
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+/* Quantity Counter Controls */
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--warm-border);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #FAF5F0;
+}
+
+.qty-btn {
+  background: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  color: var(--dark-brown);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+  background-color: var(--warm-border);
+}
+
+.qty-val {
+  padding: 0 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

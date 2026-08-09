@@ -1,0 +1,6 @@
+{
+  "name": "FreshBite",
+  "description": "Online food ordering platform where users can browse restaurants, explore menus, add items to cart, apply coupons, checkout, and manage account.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
